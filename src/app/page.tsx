@@ -26,21 +26,21 @@ export default function Home() {
         {/* 功能介绍 */}
         <section id="features" className="py-16 bg-white">
           <div className="max-w-6xl mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">我们的核心价值</h2>
+            <h2 className="text-3xl font-bold text-center mb-12 text-blue-600">我们的核心价值</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="text-center">
                 <div className="text-4xl mb-4">🤝</div>
-                <h3 className="text-xl font-semibold mb-2">组团合作</h3>
+                <h3 className="text-xl font-semibold mb-2 text-blue-600">组团合作</h3>
                 <p className="text-gray-600">与来自不同背景的人组队，共同完成真实项目。</p>
               </div>
               <div className="text-center">
                 <div className="text-4xl mb-4">💡</div>
-                <h3 className="text-xl font-semibold mb-2">项目实战</h3>
-                <p className="text-gray-600">通过实际项目积累经验，提升技能，丰富简历。</p>
+                <h3 className="text-xl text-gray font-semibold mb-2 text-blue-600">项目实战</h3>
+                <p className="text-gray-800">通过实际项目积累经验，提升技能，丰富简历。</p>
               </div>
               <div className="text-center">
                 <div className="text-4xl mb-4">🚀</div>
-                <h3 className="text-xl font-semibold mb-2">创造价值</h3>
+                <h3 className="text-xl font-semibold mb-2 text-blue-600">创造价值</h3>
                 <p className="text-gray-600">不仅是为了学习，更是为了创造真实的价值。</p>
               </div>
             </div>
@@ -50,15 +50,15 @@ export default function Home() {
         {/* 用户评价 */}
         <section id="testimonials" className="py-16 bg-gray-50">
           <div className="max-w-6xl mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">用户评价</h2>
+            <h2 className="text-3xl font-bold text-center mb-12 text-blue-600">用户评价</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <p className="text-gray-600 mb-4">“在 Drowning Dog，我不仅学到了新技能，还结识了一群志同道合的朋友！”</p>
-                <p className="font-semibold">—— 张三</p>
+                <p className="font-semibold text-gray-600">—— 张三</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <p className="text-gray-600 mb-4">“通过实际项目，我的简历变得更加有竞争力，感谢 Drowning Dog！”</p>
-                <p className="font-semibold">—— 李四</p>
+                <p className="font-semibold text-gray-600">—— 李四</p>
               </div>
             </div>
           </div>
