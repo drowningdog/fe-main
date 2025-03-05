@@ -75,8 +75,13 @@ export default function Home() {
         {/* 页脚 */}
         <footer id="contact" className="bg-gray-800 text-white py-8">
           <div className="max-w-6xl mx-auto px-4 text-center">
-            <p className="mb-4">联系我们: support@drowning-dog.com</p>
-            <p>© 2025 Drowning Dog. 版权所有.</p>
+            <p className="mb-4">扫描二维码联系我们：</p>
+            <img
+                src="/landingpage/group_qr.JPG" // 引用 public 目录下的二维码图片
+                alt="联系我们二维码"
+                className="mx-auto w-48" // 设置二维码图片的大小
+            />
+            <p className="mt-4">© 2025 Drowning Dog. 版权所有.</p>
           </div>
         </footer>
       </div>
