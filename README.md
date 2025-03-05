@@ -34,3 +34,24 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## git instruction
+
+please follow the format \[type\]: \[succinct message\]
+
+feat: new feature
+example: feat: add user authentication feature
+fix: fix bug
+example: fix: resolve login issue for users
+docs: doc renew
+example: docs: update README with installation instructions
+style: style adjustment (does not effect any function)
+example: style: format code according to ESLint rules
+refactor: refactor（not a bug fixing nor new feature）
+example: refactor: improve code readability in user service
+perf: performance optimization
+example: perf: optimize image loading speed
+test: add new tests
+example: test: add unit tests for authentication module
+chore: any other
+example: chore: update dependencies to latest versions
