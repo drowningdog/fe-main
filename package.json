@@ -16,6 +16,9 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
+  "engines": {
+    "node": ">=18.18.0"
+  },
   "devDependencies": {
     "@cloudflare/next-on-pages": "^1.13.9",
     "@eslint/eslintrc": "^3",
