@@ -53,6 +53,22 @@ export default function Home() {
                     </div>
                 </header>
 
+                {/* YouTube 视频 */}
+                <section className="py-16 bg-white">
+                    <div className="max-w-6xl mx-auto px-4">
+                        <div className="aspect-w-16 aspect-h-9">
+                            <iframe
+                                src="https://www.youtube.com/embed/p-GsJQS-eUw"
+                                title="YouTube video player"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                                className="w-full h-full rounded-lg shadow-lg"
+                            ></iframe>
+                        </div>
+                    </div>
+                </section>
+
                 {/* 功能介绍 */}
                 <section id="features" className="py-16 bg-white">
                     <div className="max-w-6xl mx-auto px-4">
