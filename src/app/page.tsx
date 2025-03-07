@@ -56,14 +56,14 @@ export default function Home() {
                 {/* YouTube 视频 */}
                 <section className="py-16 bg-white">
                     <div className="max-w-6xl mx-auto px-4">
-                        <div className="aspect-w-16 aspect-h-9">
+                        <div className="relative" style={{ paddingBottom: "56.25%", height: 0 }}> {/* 保持 16:9 比例 */}
                             <iframe
                                 src="https://www.youtube.com/embed/p-GsJQS-eUw"
                                 title="YouTube video player"
                                 frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen
-                                className="w-full h-full rounded-lg shadow-lg"
+                                className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
                             ></iframe>
                         </div>
                     </div>
