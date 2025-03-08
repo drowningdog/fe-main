@@ -1,3 +1,5 @@
 User-agent: *
 Allow: /
-Sitemap: https://drowning-dog.com/sitemap.xml
+Disallow: /admin/
+Disallow: /private/
+Sitemap: https://gapbridgecommunity.com/sitemap.xml
