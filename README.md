@@ -1,8 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Drowning Dog / Gap Bridge community
+---
 
-## Getting Started
+- Gap Year Project Collaboration Platform
 
-First, run the development server:
+This is a project built with Next.js to help users form teams and work on real-world projects during their Gap Year, 
+gaining experience and creating value. The project is deployed on Cloudflare Pages, leveraging its global CDN and edge 
+computing capabilities to deliver fast and reliable access.
+
+Project Structure
+- Framework: Next.js (App Router)
+
+- Styling: Tailwind CSS
+
+- Deployment: Cloudflare Pages
+
+- Build Tool: @cloudflare/next-on-pages
+
+Quick Start
+1. Install Dependencies
+    ```bash
+    npm install
+    # or
+    yarn install
+    # or
+    pnpm install
+    # or
+    bun install
+    ```
+
+2. Local Development
+   Start the Next.js development server:
 
 ```bash
 npm run dev
@@ -13,60 +40,109 @@ pnpm dev
 # or
 bun dev
 ```
+Open http://localhost:3000 to view the project.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Simulate Cloudflare Environment
+   To simulate the Cloudflare Pages deployment environment locally, run the following command:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run pages:dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This command will first build the project and then start a local development server that mimics the Cloudflare Pages runtime environment.
 
-## Learn More
+Build and Deployment
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 1. Build the Project
+   Run the following command to generate static files:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run pages:build
+```
 
-## Deploy on Vercel
+The build output will be saved in the [.vercel/output/static] directory.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 2. Deploy to Cloudflare Pages
+   After pushing the project to the Git repository, Cloudflare Pages will automatically detect changes and deploy the 
+   project. You can also manually trigger a deployment:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Log in to Cloudflare Pages.
 
-## git instruction
+Select your project.
 
-please follow the format [type]: [succinct message]
+Click the "Deploy" button.
 
-feat: new feature
+Development Guide
+1. 
+2. Environment Variables
+   Create a .env file in the project root directory and add the following environment variables:
 
-- example: feat: add user authentication feature
+```env
+# Next.js Environment Variables
+NEXT_PUBLIC_API_URL=https://api.example.com
 
-fix: fix bug
+# Cloudflare Pages Environment Variables
+CF_PAGES=1
+CF_PAGES_BRANCH=main
+```
 
-- example: fix: resolve login issue for users
+## 3. Git Commit Guidelines
+   Please follow the commit message format below:
 
-docs: doc renew
+| Type     | Description                                 | Example                                    |
+|----------|---------------------------------------------|--------------------------------------------|
+| feat     | A new feature                               | feat: add user authentication feature      |
+| fix      | A bug fix                                   | fix: resolve user login issue              |
+| docs     | Documentation changes                       | docs: update README installation guide     |
+| style    | Code style changes (no functional changes)  | style: format code according to ESLint     |
+| refactor | Code refactoring (no bug fixes or features) | refactor: improve user service readability |
+| perf     | Performance improvements                    | perf: optimize image loading speed         |
+| test     | Adding tests                                | test: add unit tests for auth module       |
+| chore    | Other changes (e.g., dependency updates)    | chore: update dependencies to latest       |
 
- - example: docs: update README with installation instructions
 
-style: style adjustment (does not effect any function)
+## 3. Code Standards
 
- - example: style: format code according to ESLint rules
+Use [ESLint](https://eslint.org) for code linting.
 
-refactor: refactor（not a bug fixing nor new feature）
 
- - example: refactor: improve code readability in user service
+Run the following command to check the code:
 
-perf: performance optimization
+```bash
+npm run lint
+```
 
- - example: perf: optimize image loading speed
+Tech Stack
 
-test: add new tests
+Frontend Framework: [Next.js](https://nextjs.org/)
 
- - example: test: add unit tests for authentication module
+Styling Library: [Tailwind CSS](https://tailwindcss.com/)
 
-chore: any other
+Font: [Geist](https://vercel.com/font) (optimized with `next/font`)
 
- - example: chore: update dependencies to latest versions
+Deployment Platform: [Cloudflare Pages](https://pages.cloudflare.com/)
+
+Build Tool: `@cloudflare/next-on-pages`
+
+Learning Resources
+[Next.js Documentation](https://nextjs.org/docs) - Learn about Next.js features and APIs.
+
+[Learn Next.js](https://nextjs.org/learn) - Interactive Next.js tutorial.
+
+[Cloudflare Pages Documentation](https://developers.cloudflare.com/pages/) - Learn how to deploy to Cloudflare Pages.
+
+Contributing
+
+We welcome issues and pull requests! Please ensure your code follows the project's coding standards and adheres to the 
+Git commit message format.
+
+License
+This project is licensed under the MIT License.
+
+Contact
+If you have any questions, feel free to reach out:
+
+Email: `TBA`
+
+Website: https://gapbridgecommunity.com
