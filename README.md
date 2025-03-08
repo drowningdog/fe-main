@@ -37,21 +37,36 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ## git instruction
 
-please follow the format \[type\]: \[succinct message\]
+please follow the format [type]: [succinct message]
 
 feat: new feature
-example: feat: add user authentication feature
+
+- example: feat: add user authentication feature
+
 fix: fix bug
-example: fix: resolve login issue for users
+
+- example: fix: resolve login issue for users
+
 docs: doc renew
-example: docs: update README with installation instructions
+
+ - example: docs: update README with installation instructions
+
 style: style adjustment (does not effect any function)
-example: style: format code according to ESLint rules
+
+ - example: style: format code according to ESLint rules
+
 refactor: refactor（not a bug fixing nor new feature）
-example: refactor: improve code readability in user service
+
+ - example: refactor: improve code readability in user service
+
 perf: performance optimization
-example: perf: optimize image loading speed
+
+ - example: perf: optimize image loading speed
+
 test: add new tests
-example: test: add unit tests for authentication module
+
+ - example: test: add unit tests for authentication module
+
 chore: any other
-example: chore: update dependencies to latest versions
+
+ - example: chore: update dependencies to latest versions
